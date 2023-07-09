@@ -28,4 +28,4 @@ run: all
 	@./matmul-int64
 	@echo "Running matmul-int64"
 	@./matmul-int64
-	@./bench.py
+	@./matmul.py
