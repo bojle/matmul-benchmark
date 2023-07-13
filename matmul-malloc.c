@@ -19,10 +19,8 @@ int main(void) {
 	clock_t tim1 = clock();
 	for (int i = 0; i < 1000; i++) {
 		for (int j = 0; j < 1000; j++) {
-			t = 0;
 			for (int k = 0; k < 1000; k++)
-				t += mat1[i*1000 + k] * mat2[k*1000 + j];
-			mat3[i*1000 + j] = t;
+				mat3[i*1000 + j] += mat1[i*1000 + k] * mat2[k*1000 + j];
 		}
 	}
 	clock_t tim2 = clock();
